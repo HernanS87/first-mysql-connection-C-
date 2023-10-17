@@ -1,4 +1,4 @@
-namespace Instituto_Terciario
+namespace ManipularClases
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Instituto_Terciario
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new frmLogin());
         }
     }
 }
