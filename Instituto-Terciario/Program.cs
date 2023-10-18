@@ -1,4 +1,4 @@
-namespace ManipularClases
+namespace Instituto_Terciario
 {
     internal static class Program
     {
