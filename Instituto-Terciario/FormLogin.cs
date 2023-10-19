@@ -36,6 +36,13 @@ namespace Instituto_Terciario
             {
                 MessageBox.Show("El usuario se registro correctamente",
                                 "INGRESO EXITOSO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                frmPrincipal Principal = new frmPrincipal();
+
+                Principal.rol = Convert.ToString(tablaLogin.Rows[0][0]);
+                Principal.usuario = Convert.ToString(txtUsuario.Text);
+                Principal.Show();
+                this.Hide();
             }
             else
             {
