@@ -30,5 +30,18 @@ namespace Instituto_Terciario
             //Cierra todas las ventanas de la app
             Application.Exit();
         }
+
+        private void inscripcion_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+
+        private void btnInscribirP_Click(object sender, EventArgs e)
+        {
+            frmInscripcion inscripcion = new frmInscripcion();  
+            inscripcion.Show();
+            inscripcion.FormClosed += inscripcion_FormClosed;
+            this.Hide();
+        }
     }
 }

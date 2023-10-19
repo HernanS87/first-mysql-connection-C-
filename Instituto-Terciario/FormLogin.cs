@@ -23,6 +23,11 @@ namespace Instituto_Terciario
 
         }
 
+        private void Principal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+        }
+
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
@@ -42,6 +47,7 @@ namespace Instituto_Terciario
                 Principal.rol = Convert.ToString(tablaLogin.Rows[0][0]);
                 Principal.usuario = Convert.ToString(txtUsuario.Text);
                 Principal.Show();
+                Principal.FormClosed += Principal_FormClosed;
                 this.Hide();
             }
             else

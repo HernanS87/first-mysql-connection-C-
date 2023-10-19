@@ -46,6 +46,7 @@
             btnInscribirP.TabIndex = 0;
             btnInscribirP.Text = "Inscribir Postulante";
             btnInscribirP.UseVisualStyleBackColor = false;
+            btnInscribirP.Click += btnInscribirP_Click;
             // 
             // btnAsignarC
             // 
